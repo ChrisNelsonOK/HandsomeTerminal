@@ -1,0 +1,92 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - button [ref=e6] [cursor=pointer]:
+        - img [ref=e7]
+      - generic [ref=e10]: Quick Actions
+    - generic [ref=e11]:
+      - button "AI Assistant" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+        - generic [ref=e15]: AI Assistant
+      - button [ref=e16] [cursor=pointer]:
+        - img [ref=e17]
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - img [ref=e28]
+        - generic [ref=e30]:
+          - heading "Handsome" [level=1] [ref=e31]
+          - paragraph [ref=e32]: Terminal v1.0
+      - navigation [ref=e33]:
+        - button "Terminals" [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+          - generic [ref=e37]: Terminals
+        - button "Sessions" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]
+          - generic [ref=e43]: Sessions
+        - button "SSH" [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+          - generic [ref=e48]: SSH
+        - button "Cloud" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Cloud
+        - button "Databases" [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+          - generic [ref=e58]: Databases
+        - button "DevOps" [ref=e59] [cursor=pointer]:
+          - img [ref=e60]
+          - generic [ref=e63]: DevOps
+        - button "Git" [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+          - generic [ref=e69]: Git
+        - button "Network" [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+          - generic [ref=e76]: Network
+        - button "Plugins" [ref=e77] [cursor=pointer]:
+          - img [ref=e78]
+          - generic [ref=e80]: Plugins
+        - button "Security" [ref=e81] [cursor=pointer]:
+          - img [ref=e82]
+          - generic [ref=e84]: Security
+        - button "Settings" [ref=e85] [cursor=pointer]:
+          - img [ref=e86]
+          - generic [ref=e89]: Settings
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - img [ref=e93]
+          - generic [ref=e96]: System Status
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: CPU
+            - generic [ref=e100]: 23%
+          - generic [ref=e101]:
+            - generic [ref=e102]: Memory
+            - generic [ref=e103]: 45%
+          - generic [ref=e104]:
+            - generic [ref=e105]: Network
+            - generic [ref=e106]: Online
+    - main [ref=e107]:
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - button "Test Terminal Close terminal" [ref=e112] [cursor=pointer]:
+              - text: Test Terminal
+              - button "Close terminal" [ref=e113]:
+                - img [ref=e114]
+            - button "Test Terminal Close terminal" [ref=e116] [cursor=pointer]:
+              - text: Test Terminal
+              - button "Close terminal" [ref=e117]:
+                - img [ref=e118]
+            - button "New terminal" [ref=e120] [cursor=pointer]:
+              - img [ref=e121]
+          - button "Maximize" [ref=e123] [cursor=pointer]:
+            - img [ref=e124]
+        - generic [ref=e133]:
+          - generic:
+            - textbox "Terminal input"
+```

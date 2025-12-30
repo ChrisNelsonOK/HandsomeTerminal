@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-terminal-border;
+  }
+
+  body {
+    @apply bg-terminal-bg text-terminal-text font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+}
+
+@layer components {
+  .terminal-input {
+    @apply bg-transparent outline-none text-terminal-text font-mono;
+  }
+
+  .terminal-output {
+    @apply text-terminal-output font-mono whitespace-pre-wrap;
+  }
+
+  .btn-primary {
+    @apply bg-terminal-accent hover:bg-terminal-accentHover text-black font-medium px-4 py-2 rounded-lg transition-all duration-200 shadow-lg shadow-terminal-accent/20;
+  }
+
+  .btn-secondary {
+    @apply bg-terminal-border hover:bg-terminal-bgSecondary text-terminal-text font-medium px-4 py-2 rounded-lg transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-terminal-bgSecondary border border-terminal-border rounded-lg p-4;
+  }
+
+  .input-field {
+    @apply bg-terminal-bg border border-terminal-border rounded-lg px-4 py-2 text-terminal-text outline-none focus:border-terminal-accent transition-colors;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer transition-all duration-200;
+  }
+
+  .sidebar-item:hover {
+    @apply bg-terminal-border;
+  }
+
+  .sidebar-item.active {
+    @apply bg-terminal-accent/10 text-terminal-accent border-l-2 border-terminal-accent;
+  }
+
+  .flyout {
+    @apply fixed bg-terminal-bgSecondary border border-terminal-border rounded-lg shadow-2xl z-50;
+  }
+
+  .flyout-arrow {
+    @apply absolute w-4 h-4 bg-terminal-bgSecondary border-t-2 border-l-2 border-terminal-border transform rotate-45;
+  }
+
+  .loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-2 border-terminal-accent border-t-transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-terminal-border rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-terminal-textMuted;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+  }
+
+  .neon-blue {
+    color: #00f0ff;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+  }
+
+  .neon-pink {
+    color: #ff00aa;
+    text-shadow: 0 0 10px rgba(255, 0, 170, 0.5);
+  }
+
+  .neon-green {
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  }
+
+  .gradient-border {
+    background: linear-gradient(135deg, #00ff88, #00ccff, #ff00aa);
+    padding: 1px;
+    border-radius: 0.75rem;
+  }
+
+  .gradient-border-inner {
+    background: #0a0a0a;
+    border-radius: 0.7rem;
+  }
+}
