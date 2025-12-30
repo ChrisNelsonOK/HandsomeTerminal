@@ -10,11 +10,11 @@ interface HeaderProps {
 
 const Header = ({ onToggleSidebar, onToggleAI, onToggleSettings, onTogglePlugins }: HeaderProps): JSX.Element => {
   return (
-    <div className="h-12 bg-terminal-bgSecondary border-b border-terminal-border flex items-center justify-between px-4">
+    <div className="h-12 bg-terminal-bgSecondary border-b border-terminal-border flex items-center justify-between px-4 drag-region">
       <div className="flex items-center gap-3">
         <motion.button
           onClick={onToggleSidebar}
-          className="p-2 rounded-lg text-terminal-textMuted hover:bg-terminal-border hover:text-terminal-text transition-all duration-200"
+          className="p-2 rounded-lg text-terminal-textMuted hover:bg-terminal-border hover:text-terminal-text transition-all duration-200 no-drag"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -29,7 +29,7 @@ const Header = ({ onToggleSidebar, onToggleAI, onToggleSettings, onTogglePlugins
       <div className="flex items-center gap-2">
         <motion.button
           onClick={onToggleAI}
-          className="flex items-center gap-2 px-4 py-2 bg-terminal-accent/10 hover:bg-terminal-accent/20 text-terminal-accent rounded-lg transition-all duration-200 border border-terminal-accent/30"
+          className="flex items-center gap-2 px-4 py-2 bg-terminal-accent/10 hover:bg-terminal-accent/20 text-terminal-accent rounded-lg transition-all duration-200 border border-terminal-accent/30 no-drag"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
@@ -39,7 +39,7 @@ const Header = ({ onToggleSidebar, onToggleAI, onToggleSettings, onTogglePlugins
 
         <motion.button
           onClick={onTogglePlugins}
-          className="p-2 rounded-lg text-terminal-textMuted hover:bg-terminal-border hover:text-terminal-text transition-all duration-200"
+          className="p-2 rounded-lg text-terminal-textMuted hover:bg-terminal-border hover:text-terminal-text transition-all duration-200 no-drag"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -48,7 +48,7 @@ const Header = ({ onToggleSidebar, onToggleAI, onToggleSettings, onTogglePlugins
 
         <motion.button
           onClick={onToggleSettings}
-          className="p-2 rounded-lg text-terminal-textMuted hover:bg-terminal-border hover:text-terminal-text transition-all duration-200"
+          className="p-2 rounded-lg text-terminal-textMuted hover:bg-terminal-border hover:text-terminal-text transition-all duration-200 no-drag"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >

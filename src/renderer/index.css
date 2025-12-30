@@ -81,6 +81,13 @@
   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
     @apply bg-terminal-textMuted;
   }
+  .drag-region {
+    -webkit-app-region: drag;
+  }
+
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }
 }
 
 @layer utilities {
