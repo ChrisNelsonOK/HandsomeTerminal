@@ -13,7 +13,7 @@ export class WindowManager {
       backgroundColor: '#0a0a0a',
       show: false,
       webPreferences: {
-        preload: path.join(__dirname, 'preload.js'),
+        preload: path.join(__dirname, '../preload.js'),
         contextIsolation: true,
         nodeIntegration: false,
         sandbox: true
@@ -28,7 +28,7 @@ export class WindowManager {
       mainWindow.loadURL('http://localhost:5173')
       mainWindow.webContents.openDevTools()
     } else {
-      mainWindow.loadFile(path.join(__dirname, '../renderer/index.html'))
+      mainWindow.loadFile(path.join(__dirname, '../../renderer/index.html'))
     }
 
     mainWindow.once('ready-to-show', () => {
